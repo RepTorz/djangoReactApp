@@ -13,3 +13,15 @@ export const getLeads = () => dispatch => {
         }).catch(err => console.log(err));
 
 }
+
+// DELETE LEAD
+export const deleteLeads = () => dispatch => {
+    axios.get('/api/leads/')
+        .then(res => {
+            dispatch({
+                type: GET_LEADS,
+                payload: res.data
+            });
+        }).catch(err => console.log(err));
+
+}
