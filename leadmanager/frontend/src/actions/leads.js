@@ -20,7 +20,7 @@ export const deleteLead = (id) => dispatch => {
     axios
         .delete(`/api/leads/${id}/`)
         .then(res => {
-            dispatch(createMessage({ deleteLead: 'Lead Deleted' }))
+            dispatch(createMessage({ deleteLead: 'Lead Deleted' }));
             dispatch({
                 // just the name of the action
                 type: DELETE_LEAD,
@@ -35,6 +35,7 @@ export const addLead = (lead) => dispatch => {
     axios
         .post('/api/leads/', lead)
         .then(res => {
+            dispatch(createMessage({ addLead: 'Lead Added' }));
             dispatch({
                 type: ADD_LEAD,
                 payload: res.data
