@@ -18,14 +18,16 @@ export class Leads extends Component {
     render() {
         return (
             <Fragment>
-                <h2>Leads</h2>
+                <h2>SLO Metrics
+                </h2>
                 <table className="table table-striped">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Message</th>
+                            <th>Metric</th>
+                            <th>Q1 Target</th>
+                            <th>Q1 Actual</th>
+                            <th>Deviation</th>
+                            <th>% Error Budget Left Over</th>
                             <th />
                         </tr>
                     </thead>
