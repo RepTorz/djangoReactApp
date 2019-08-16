@@ -5,5 +5,7 @@ Site Reliabilitiy Engineering Web Application - Using DJANGO REST Framework in t
 To run locally on your computer:
 
 cd "~/projects/djangoReactApp"
+
+
 python manage.py runserver
 
